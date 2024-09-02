@@ -11,6 +11,7 @@
   "dependencies": {
     "@splinetool/react-spline": "^4.0.0",
     "@splinetool/viewer": "^1.9.21",
+    "framer-motion": "^11.3.31",
     "next": "14.2.7",
     "react": "^18",
     "react-dom": "^18"
