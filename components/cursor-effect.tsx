@@ -1,4 +1,4 @@
-// Made with https://github.com/perfectbase/effects
+// Made with https://github.com/perfectbase/effects/blob/main/src/app/blurry-blob/page.tsx
 
 import {useEffect, useRef, useState} from 'react';
 import { motion } from 'framer-motion';
@@ -37,7 +37,7 @@ export default function CursorEffect() {
 
     return (
         <motion.div
-            className="fixed rounded-full pointer-events-none z-0 blur-[120px]"
+            className="fixed rounded-full pointer-events-none z-0 blur-[100px]"
             style={{
                 x: deltaX,
                 y: deltaY,
