@@ -1,23 +1,74 @@
 import type { Metadata } from "next";
-import { Work_Sans } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
+import { Navbar } from "@/app/components/nav";
+import Footer from "@/app/components/footer";
 import React from "react";
 
-const montserrat = Work_Sans({ subsets: ["latin"] });
+const GeistSans = localFont({
+    src: "./fonts/GeistVF.woff",
+    variable: "--font-geist-sans",
+    weight: "100 900",
+});
+const GeistMono = localFont({
+    src: "./fonts/GeistMonoVF.woff",
+    variable: "--font-geist-mono",
+    weight: "100 900",
+});
 
 export const metadata: Metadata = {
-  title: "Andrew Liu",
-  description: "Personal portfolio",
+    title: {
+        default: 'Next.js Portfolio Starter',
+        template: '%s | Next.js Portfolio Starter',
+    },
+    description: 'This is my portfolio.',
+    openGraph: {
+        title: 'My Portfolio',
+        description: 'This is my portfolio.',
+        siteName: 'My Portfolio',
+        locale: 'en_US',
+        type: 'website',
+    },
+    robots: {
+        index: true,
+        follow: true,
+        googleBot: {
+            index: true,
+            follow: true,
+            'max-video-preview': -1,
+            'max-image-preview': 'large',
+            'max-snippet': -1,
+        },
+    },
 };
 
-export default function RootLayout({
-                                     children,
-                                   }: Readonly<{
-  children: React.ReactNode;
-}>) {
-  return (
-      <html lang="en">
-            <body className={montserrat.className}>{children}</body>
-      </html>
-  );
+const cx = (...classes: string[]) => classes.filter(Boolean).join(' ');
+
+export default function RootLayout({ children }: { children: React.ReactNode }) {
+    return (
+        <html
+            lang="en"
+            className={cx(
+                'text-black bg-white dark:text-white dark:bg-black',
+                GeistSans.variable,
+                GeistMono.variable
+            )}
+        >
+        <head>
+            {/* Add Devicon stylesheet here */}
+            <link
+                rel="stylesheet"
+                href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
+            />
+            <title></title>
+        </head>
+        <body className="antialiased max-w-xl mx-4 mt-8 lg:mx-auto">
+        <main className="flex-auto min-w-0 mt-6 flex flex-col px-2 md:px-0">
+            <Navbar />
+            {children}
+            <Footer />
+        </main>
+        </body>
+        </html>
+    );
 }

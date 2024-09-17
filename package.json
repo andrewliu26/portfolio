@@ -9,27 +9,19 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@ionic/react": "^8.2.7",
-    "@radix-ui/react-slot": "^1.1.0",
-    "class-variance-authority": "^0.7.0",
-    "clsx": "^2.1.1",
-    "embla-carousel-react": "^8.2.0",
-    "framer-motion": "^11.3.31",
+    "@ionic/react": "^8.3.0",
     "ionicons": "^7.4.0",
-    "lucide-react": "^0.438.0",
-    "next": "14.2.7",
+    "next": "14.2.11",
     "react": "^18",
-    "react-dom": "^18.3.1",
-    "react-simple-typewriter": "^5.0.1",
-    "tailwind-merge": "^2.5.2",
-    "tailwindcss-animate": "^1.0.7"
+    "react-dom": "^18",
+    "react-simple-typewriter": "^5.0.1"
   },
   "devDependencies": {
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "eslint": "^8",
-    "eslint-config-next": "14.2.7",
+    "eslint-config-next": "14.2.11",
     "postcss": "^8",
     "tailwindcss": "^3.4.1",
     "typescript": "^5"
