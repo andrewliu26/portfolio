@@ -6,10 +6,15 @@ import PixelCat from "@/app/assets/cat/cat";
 export default function Page() {
   return (
       <section>
-          <h1 className="mb-8 text-2xl font-semibold tracking-tighter">
-              Andrew Liu
-          </h1>
-          <div className={"mb-8"}>
+          <div className="flex flex-row justify-start">
+              <h1 className="mb-4 text-2xl font-semibold tracking-tighter">
+                  Andrew Liu
+              </h1>
+              {/*
+
+              */}
+          </div>
+          <div className={"mb-4"}>
               <Typewriter
                   words={['Software Developer', 'Software Engineer', 'UX/UI Designer']}
                   loop
@@ -27,7 +32,7 @@ export default function Page() {
           optimizing components, and creating seamless user interfaces. I’m always eager 
           to learn and push the boundaries of what’s possible in web development.`}
           </p>
-          <div className="my-8">
+          <div className="mt-10 mb-8">
               <PixelCat/>
           </div>
       </section>

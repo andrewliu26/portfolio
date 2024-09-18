@@ -8,7 +8,9 @@ const experience = [
         endDate: '2024-08-01',
         link: '/',
         current: false,
-        description: 'Developed user-friendly interfaces using React, Tailwind CSS, and Next.js. Improved performance of the onboarding process and collaborated on cross-functional teams.' // Added description
+        employer: 'BU Spark!',
+        location: 'Boston, MA',
+        description: 'Developed the mobile interface of the CoSphere app using React Native with TypeScript, optimizing the development process and collaborating with cross-functional teams to streamline workflows and ensure timely task completion.'
     },
 ]
 

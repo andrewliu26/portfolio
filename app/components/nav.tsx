@@ -36,7 +36,7 @@ export function Navbar() {
                                     key={path}
                                     href={path}
                                     className={`transition-all text-neutral-700 dark:text-neutral-300 hover:text-neutral-800 dark:hover:text-neutral-200 flex align-middle relative py-1 px-2 m-1 ${
-                                        isActive ? 'font-bold text-neutral-900 dark:text-neutral-100' : ''
+                                        isActive ? 'font-semibold text-neutral-900 dark:text-neutral-100' : ''
                                     }`}
                                 >
                                     {name}

@@ -18,14 +18,14 @@ const GeistMono = localFont({
 
 export const metadata: Metadata = {
     title: {
-        default: 'Next.js Portfolio Starter',
-        template: '%s | Next.js Portfolio Starter',
+        default: 'Andrew Liu',
+        template: 'Andrew Liu | %s',
     },
-    description: 'This is my portfolio.',
+    description: 'My portfolio.',
     openGraph: {
-        title: 'My Portfolio',
-        description: 'This is my portfolio.',
-        siteName: 'My Portfolio',
+        title: 'Andrew Liu',
+        description: 'My portfolio.',
+        siteName: 'Andrew Liu',
         locale: 'en_US',
         type: 'website',
     },
@@ -55,12 +55,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             )}
         >
         <head>
-            {/* Add Devicon stylesheet here */}
             <link
                 rel="stylesheet"
                 href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
             />
-            <title></title>
+            <title/>
         </head>
         <body className="antialiased max-w-xl mx-4 mt-8 lg:mx-auto">
         <main className="flex-auto min-w-0 mt-6 flex flex-col px-2 md:px-0">

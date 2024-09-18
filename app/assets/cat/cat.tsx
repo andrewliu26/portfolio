@@ -3,6 +3,6 @@ import Image from "next/image";
 
 export default function PixelCat() {
     return (
-        <Image src={cat} alt={"cat :)"} width={36} height={36} unoptimized={true}/>
+        <Image src={cat} alt={"cat :)"} width={30} height={30} unoptimized={true}/>
     )
 }
