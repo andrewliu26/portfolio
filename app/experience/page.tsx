@@ -9,7 +9,6 @@ const experience = [
         link: '/',
         current: false,
         employer: 'BU Spark!',
-        location: 'Boston, MA',
         description: 'Developed the mobile interface of the CoSphere app using React Native with TypeScript, optimizing the development process and collaborating with cross-functional teams to streamline workflows and ensure timely task completion.'
     },
 ]
@@ -17,7 +16,7 @@ const experience = [
 export default function ExperiencePage() {
     return (
         <section>
-            <h1 className="mb-8 text-2xl font-semibold tracking-tighter">
+            <h1 className="mb-8 text-2xl font-semibold tracking-tight">
                 Work Experience
             </h1>
             <div className="my-8">
