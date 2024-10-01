@@ -57,9 +57,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <head>
             <link
                 rel="stylesheet"
-                href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
+                href={"https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"}
             />
-            <title/>
+            <link rel="icon" href="/favicon.ico"/>
+            <title>Andrew Liu</title>
         </head>
         <body className="antialiased max-w-xl mx-4 mt-8 lg:mx-auto">
         <main className="flex-auto min-w-0 mt-6 flex flex-col px-2 md:px-0">

@@ -7,9 +7,10 @@ const experience = [
         startDate: '2024-05-01',
         endDate: '2024-08-01',
         link: '/',
-        current: false,
+        present: false,
         employer: 'BU Spark!',
-        description: 'Developed the mobile interface of the CoSphere app using React Native with TypeScript, optimizing the development process and collaborating with cross-functional teams to streamline workflows and ensure timely task completion.'
+        description: 'Developed the mobile interface of the CoSphere app using React Native with TypeScript, optimizing the development process and collaborating with cross-functional teams to streamline workflows and ensure timely task completion.',
+        tags: ['JavaScript', 'TypeScript', 'React Native'],
     },
 ]
 
