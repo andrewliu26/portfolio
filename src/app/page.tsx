@@ -3,6 +3,7 @@
 import PrimaryButton from "@/components/PrimaryButton";
 import LinkButton from "@/components/LinkButton";
 import SecondaryButton from "@/components/SecondaryButton";
+import ProjectCard from "@/components/ProjectCard";
 
 export default function Home() {
     return (
@@ -48,7 +49,7 @@ export default function Home() {
                         </SecondaryButton>
                     </div>
                     <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
-                        <p>Connect with me</p>
+                        <p>Connect with me:</p>
                         <div style={{ display: "flex", gap: "20px" }}>
                             <LinkButton href="https://www.figma.com/@andrewliu26/" icon="/icons/figma.svg">
                                 Figma
@@ -76,10 +77,54 @@ export default function Home() {
                     overflowY: "auto",
                     paddingTop: "40px",
                     paddingBottom: "60px",
-                    backgroundColor: "#e5e5e5",
                 }}
             >
-                {/* Your right content here */}
+                {/* Header */}
+                <div style={{ 
+                    display: "flex", 
+                    justifyContent: "space-between", 
+                    alignItems: "center",
+                    marginBottom: "32px"
+                }}>
+                    <h2 style={{ 
+                        fontFamily: "var(--font-geist-sans), sans-serif",
+                        fontSize: "1rem",
+                        fontWeight: "600",
+                        color: "#111111",
+                        margin: "0"
+                    }}>
+                        Projects
+                    </h2>
+                    <div style={{
+                        display: "flex",
+                        alignItems: "center",
+                        gap: "8px",
+                        fontFamily: "var(--font-geist-sans), sans-serif",
+                        fontSize: "0.875rem",
+                        color: "#4e4e4e"
+                    }}>
+                        <img src="/icons/arrow.svg" alt="Arrow down" width={10} height={10} style={{ transform: "rotate(-90deg)" }} />
+                        <span>Scroll down to view more</span>
+                    </div>
+                </div>
+                
+                {/* Project Cards */}
+                <div style={{ display: "flex", flexDirection: "column", gap: "24px" }}>
+                    <ProjectCard
+                        href="/project/adaptx"
+                        imageSrc="/adaptx/adaptx-thumbnail.png"
+                        imageAlt="AdaptX Project"
+                        projectName="AdaptX"
+                        date="2025"
+                    />
+                    <ProjectCard
+                        href="/project/uniview"
+                        imageSrc="/uniview/uniview-thumbnail.png"
+                        imageAlt="Uniview Project"
+                        projectName="Uniview"
+                        date="2024"
+                    />
+                </div>
             </div>
         </div>
     );
