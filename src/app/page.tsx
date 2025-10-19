@@ -37,13 +37,13 @@ export default function Home() {
                     width={48}
                     height={44}
                 />
-                <div style={{ display: "flex", flexDirection: "column", gap: "50px" }}>
+                <div className="main-left" style={{ display: "flex", flexDirection: "column", gap: "50px" }}>
                     <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
                         <h1>Hi, I'm Andrew Liu</h1>
                         <h2>Junior UI/UX Designer</h2>
                     </div>
                     <div className="buttons-container" style={{ display: "flex", gap: "10px" }}>
-                        <PrimaryButton onClick={() => console.log('Button clicked!')}>
+                        <PrimaryButton onClick={() => window.open('/Andrew_Liu_UIUX_Designer.pdf', '_blank')}>
                             View Resume
                         </PrimaryButton>
                         <SecondaryButton onClick={() => console.log('Button clicked!')}>
@@ -83,7 +83,7 @@ export default function Home() {
                 }}
             >
                 {/* Header */}
-                <div className="projects-header" style={{ 
+                <div style={{ 
                     display: "flex", 
                     justifyContent: "space-between", 
                     alignItems: "center",

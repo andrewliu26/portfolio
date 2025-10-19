@@ -84,28 +84,17 @@ p {
   .left-column {
     flex: none !important;
     padding: 40px 0 !important;
-    align-items: center !important;
     gap: 50px !important;
-    text-align: center !important;
+  }
+
+  .main-left {
+    gap: 30px !important;
   }
   
   .right-column {
     flex: none !important;
+    height: fit-content !important;
     padding: 20px 0 !important;
-  }
-  
-  .projects-header {
-    flex-direction: column !important;
-    gap: 16px !important;
-    align-items: flex-start !important;
-  }
-  
-  .social-links {
-    justify-content: center !important;
-  }
-  
-  .buttons-container {
-    justify-content: center !important;
   }
 }
 
@@ -113,7 +102,7 @@ p {
   /* Small mobile styles */
   .main-container {
     flex-direction: column !important;
-    padding: 0 16px !important;
+    padding: 0 24px !important;
     gap: 40px !important;
   }
 }
