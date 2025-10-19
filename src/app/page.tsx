@@ -8,6 +8,7 @@ import ProjectCard from "@/components/ProjectCard";
 export default function Home() {
     return (
         <div
+            className="main-container"
             style={{
                 backgroundColor: "#ffffff",
                 minHeight: "100vh",
@@ -19,6 +20,7 @@ export default function Home() {
         >
             {/* Left Column */}
             <div
+                className="left-column"
                 style={{
                     display: "flex",
                     flexDirection: "column",
@@ -40,7 +42,7 @@ export default function Home() {
                         <h1>Hi, I'm Andrew Liu</h1>
                         <h2>Junior UI/UX Designer</h2>
                     </div>
-                    <div style={{ display: "flex", gap: "10px" }}>
+                    <div className="buttons-container" style={{ display: "flex", gap: "10px" }}>
                         <PrimaryButton onClick={() => console.log('Button clicked!')}>
                             View Resume
                         </PrimaryButton>
@@ -50,7 +52,7 @@ export default function Home() {
                     </div>
                     <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
                         <p>Connect with me:</p>
-                        <div style={{ display: "flex", gap: "20px" }}>
+                        <div className="social-links" style={{ display: "flex", gap: "20px" }}>
                             <LinkButton href="https://www.figma.com/@andrewliu26/" icon="/icons/figma.svg">
                                 Figma
                             </LinkButton>
@@ -71,6 +73,7 @@ export default function Home() {
 
             {/* Right Column */}
             <div
+                className="right-column"
                 style={{
                     flex: 4,
                     height: "100vh",
@@ -80,7 +83,7 @@ export default function Home() {
                 }}
             >
                 {/* Header */}
-                <div style={{ 
+                <div className="projects-header" style={{ 
                     display: "flex", 
                     justifyContent: "space-between", 
                     alignItems: "center",
@@ -103,7 +106,7 @@ export default function Home() {
                         fontSize: "0.875rem",
                         color: "#4e4e4e"
                     }}>
-                        <img src="/icons/arrow.svg" alt="Arrow down" width={10} height={10} style={{ transform: "rotate(-90deg)" }} />
+                        <img src="/icons/down-arrow.svg" alt="Arrow down" width={10} height={10} className="bounce-arrow" />
                         <span>Scroll down to view more</span>
                     </div>
                 </div>

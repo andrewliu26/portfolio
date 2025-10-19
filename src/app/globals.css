@@ -5,19 +5,6 @@
   --foreground: #171717;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
-}
-
 /* Tag-based styles */
 h1 {
   font-family: var(--font-geist-sans), sans-serif;
@@ -49,4 +36,84 @@ p {
 /* For Firefox */
 * {
   scrollbar-width: none;
+}
+
+/* Bounce animation for arrow */
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-4px);
+  }
+  60% {
+    transform: translateY(-2px);
+  }
+}
+
+.bounce-arrow {
+  animation: bounce 1s infinite;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  /* Tablet styles */
+  .main-container {
+    padding: 0 60px !important;
+    gap: 40px !important;
+  }
+  
+  .left-column {
+    flex: 2 !important;
+  }
+  
+  .right-column {
+    flex: 3 !important;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Mobile styles */
+  .main-container {
+    flex-direction: column !important;
+    padding: 0 20px !important;
+    gap: 40px !important;
+    min-height: auto !important;
+  }
+  
+  .left-column {
+    flex: none !important;
+    padding: 40px 0 !important;
+    align-items: center !important;
+    gap: 50px !important;
+    text-align: center !important;
+  }
+  
+  .right-column {
+    flex: none !important;
+    padding: 20px 0 !important;
+  }
+  
+  .projects-header {
+    flex-direction: column !important;
+    gap: 16px !important;
+    align-items: flex-start !important;
+  }
+  
+  .social-links {
+    justify-content: center !important;
+  }
+  
+  .buttons-container {
+    justify-content: center !important;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Small mobile styles */
+  .main-container {
+    flex-direction: column !important;
+    padding: 0 16px !important;
+    gap: 40px !important;
+  }
 }

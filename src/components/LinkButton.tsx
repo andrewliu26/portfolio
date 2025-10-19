@@ -21,7 +21,7 @@ export default function LinkButton({ href, icon, children, target }: LinkButtonP
         alignItems: "center", 
         gap: "10px",
         textDecoration: "none",
-        color: "inherit",
+        color: "#4e4e4e",
         fontFamily: "var(--font-geist-sans), sans-serif",
         fontSize: "0.875rem",
         margin: "0",

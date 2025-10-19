@@ -59,17 +59,16 @@ export default function ProjectCard({
       }}>
         <span style={{
           fontFamily: "var(--font-geist-sans), sans-serif",
-          fontSize: "1rem",
+          fontSize: "0.875rem",
           fontWeight: "500",
-          color: "inherit"
+          color: "#111111"
         }}>
           {projectName}
         </span>
         <span style={{
           fontFamily: "var(--font-geist-sans), sans-serif",
-          fontSize: "0.875rem",
-          color: "inherit",
-          opacity: "0.7"
+          fontSize: "0.813rem",
+          color: "#4e4e4e",
         }}>
           {date}
         </span>
