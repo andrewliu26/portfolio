@@ -43,7 +43,7 @@ export default function ProjectCard({
       }}
     >
       <img 
-        src={imageSrc} 
+        src={imageSrc}
         alt={imageAlt}
         style={{
           width: "100%",

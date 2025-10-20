@@ -46,9 +46,11 @@ export default function Home() {
                         <PrimaryButton onClick={() => window.open('/Andrew_Liu_UIUX_Designer.pdf', '_blank')}>
                             View Resume
                         </PrimaryButton>
-                        <SecondaryButton onClick={() => console.log('Button clicked!')}>
-                            About Me
-                        </SecondaryButton>
+                        <a href="/about" style={{ textDecoration: "none" }}>
+                            <SecondaryButton>
+                                About Me
+                            </SecondaryButton>
+                        </a>
                     </div>
                     <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
                         <p>Connect with me:</p>

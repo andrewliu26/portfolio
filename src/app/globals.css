@@ -21,9 +21,34 @@ h2 {
   margin: 0;
 }
 
+h3 {
+  font-family: var(--font-geist-sans), sans-serif;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #111111;
+  margin: 0;
+}
+
 p {
   font-family: var(--font-geist-sans), sans-serif;
   font-size: 0.875rem;
+  color: #4e4e4e;
+  margin: 0;
+}
+
+ul {
+  font-family: var(--font-geist-sans), sans-serif;
+  font-size: 0.938rem;
+  color: #4e4e4e;
+  margin: 0;
+  padding-left: 10px;
+  list-style-type: disc;
+  list-style-position: inside;
+}
+
+body {
+  font-family: var(--font-geist-sans), sans-serif;
+  font-size: 0.938rem;
   color: #4e4e4e;
   margin: 0;
 }
