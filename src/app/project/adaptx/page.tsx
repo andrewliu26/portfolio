@@ -2,20 +2,31 @@
 
 import BackButton from "@/components/BackButton";
 import PrimaryButton from "@/components/PrimaryButton";
+import PageWrapper from "@/components/PageWrapper";
 
 export default function AdaptxPage() {
+    const imageUrls = [
+        "/adaptx/adaptx-hifi.png",
+        "/adaptx/adaptx-lofi.png", 
+        "/adaptx/adaptx-mockup.png",
+        "/adaptx/adaptx-persona.png",
+        "/adaptx/adaptx-thumbnail.png",
+        "/icons/left-arrow.svg"
+    ];
+
     return (
-        <div
-            className="main-container"
-            style={{
-                backgroundColor: "#ffffff",
-                minHeight: "100vh",
-                padding: "0 120px",
-                display: "flex",
-                justifyContent: "space-between",
-                gap: "80px",
-            }}
-        >
+        <PageWrapper imageUrls={imageUrls}>
+            <div
+                className="main-container"
+                style={{
+                    backgroundColor: "#ffffff",
+                    minHeight: "100vh",
+                    padding: "0 120px",
+                    display: "flex",
+                    justifyContent: "space-between",
+                    gap: "80px",
+                }}
+            >
             {/* Left Column */}
             <div
                 className="left-column"
@@ -27,6 +38,9 @@ export default function AdaptxPage() {
                     flex: 3,
                     alignSelf: "stretch",
                     padding: "80px 0",
+                    position: "sticky",
+                    top: 0,
+                    height: "100vh",
                 }}
             >
                 <BackButton href="/" />
@@ -42,9 +56,11 @@ export default function AdaptxPage() {
                         <p><span style={{ fontWeight: 600 }}>Team Size:</span> 4</p>
                     </div>
                     <div className="buttons-container" style={{ display: "flex", gap: "10px" }}>
-                        <PrimaryButton onClick={() => window.open('https://www.figma.com/proto/8ZHYALbBjaqk0l1YGsYxUL/AdaptX-Project-Deliverables?node-id=2518-689&p=f&t=aciuc2wAoH49RueT-8&scaling=scale-down&content-scaling=fixed&page-id=2178%3A116&starting-point-node-id=2518%3A689&show-proto-sidebar=1&hide-ui=1', '_blank')}>
-                            View Prototype
-                        </PrimaryButton>
+                        <a href="https://www.figma.com/proto/8ZHYALbBjaqk0l1YGsYxUL/AdaptX-Project-Deliverables?node-id=2518-689&p=f&t=aciuc2wAoH49RueT-8&scaling=scale-down&content-scaling=fixed&page-id=2178%3A116&starting-point-node-id=2518%3A689&show-proto-sidebar=1&hide-ui=1" style={{ textDecoration: "none" }} target="_blank" rel="noopener noreferrer">
+                            <PrimaryButton>
+                                View Prototype
+                            </PrimaryButton>
+                        </a>
                     </div>
                 </div>
                 <p>© 2025 Andrew Liu</p>
@@ -55,8 +71,6 @@ export default function AdaptxPage() {
                 className="right-column"
                 style={{
                     flex: 4,
-                    height: "100vh",
-                    overflowY: "auto",
                     paddingTop: "80px",
                     paddingBottom: "80px",
                 }}
@@ -182,6 +196,7 @@ export default function AdaptxPage() {
                 </div>
             </div>
         </div>
+        </PageWrapper>
     );
 }
 

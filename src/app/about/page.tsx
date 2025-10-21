@@ -3,27 +3,37 @@
 import Link from "next/link";
 import PrimaryButton from "@/components/PrimaryButton";
 import BackButton from "@/components/BackButton";
+import PageWrapper from "@/components/PageWrapper";
 
 export default function AboutPage() {
+    const imageUrls = [
+        "/about-me/100_0269.JPG", "/about-me/100_0347.JPG", "/about-me/100_0350.JPG", "/about-me/4374521800932500333.jpg",
+        "/about-me/583276707798771918.jpg", "/about-me/b8f589143c01fc63dfd560898dba3c96.jpg", "/about-me/CineStill 400D-25.jpg", "/about-me/DSCN0663.JPG",
+        "/about-me/IMG_0763.jpeg", "/about-me/IMG_0791.jpeg", "/about-me/IMG_1096.jpeg", "/about-me/IMG_1165.jpeg",
+        "/about-me/IMG_3141.jpeg", "/about-me/IMG_3276.jpeg", "/about-me/IMG_3404.JPG", "/about-me/IMG_3820.jpeg",
+        "/about-me/IMG_4251.jpeg", "/about-me/IMG_4253.jpeg", "/about-me/IMG_4319.jpeg", "/about-me/IMG_4634.jpeg",
+        "/about-me/IMG_5026.JPG", "/about-me/IMG_5293.jpeg", "/about-me/IMG_5340.jpeg", "/about-me/IMG_6058.jpeg",
+        "/about-me/IMG_8371.jpeg", "/about-me/IMG_8433.jpeg", "/about-me/IMG_8777.jpeg", "/about-me/IMG_9580.jpeg"
+    ];
+
     return (
-        <div
-            className="main-container"
-            style={{
-                backgroundColor: "#ffffff",
-                minHeight: "100vh",
-                padding: "0 120px",
-                display: "flex",
-                justifyContent: "space-between",
-                gap: "80px",
-            }}
-        >
+        <PageWrapper imageUrls={imageUrls}>
+            <div
+                className="main-container"
+                style={{
+                    backgroundColor: "#ffffff",
+                    minHeight: "100vh",
+                    padding: "0 120px",
+                    display: "flex",
+                    justifyContent: "space-between",
+                    gap: "80px",
+                }}
+            >
             {/* Right Column */}
             <div
                 className="right-column"
                 style={{
                     flex: 4,
-                    height: "100vh",
-                    overflowY: "auto",
                     paddingTop: "40px",
                     paddingBottom: "60px",
                 }}
@@ -96,6 +106,9 @@ export default function AboutPage() {
                     flex: 3,
                     alignSelf: "stretch",
                     padding: "80px 0",
+                    position: "sticky",
+                    top: 0,
+                    height: "100vh",
                 }}
             >
                 <BackButton href="/" />
@@ -118,6 +131,7 @@ export default function AboutPage() {
                 <p>© 2025 Andrew Liu</p>
             </div>
         </div>
+        </PageWrapper>
     );
 }
 

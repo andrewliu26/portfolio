@@ -110,6 +110,8 @@ body {
     flex: none !important;
     padding: 40px 0 !important;
     gap: 50px !important;
+    position: static !important;
+    height: auto !important;
   }
 
   .main-left {

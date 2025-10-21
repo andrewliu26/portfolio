@@ -2,20 +2,27 @@
 
 import BackButton from "@/components/BackButton";
 import PrimaryButton from "@/components/PrimaryButton";
+import PageWrapper from "@/components/PageWrapper";
 
 export default function UniviewPage() {
+    const imageUrls = [
+        "/uniview/uniview-thumbnail.png",
+        "/icons/left-arrow.svg"
+    ];
+
     return (
-        <div
-            className="main-container"
-            style={{
-                backgroundColor: "#ffffff",
-                minHeight: "100vh",
-                padding: "0 120px",
-                display: "flex",
-                justifyContent: "space-between",
-                gap: "80px",
-            }}
-        >
+        <PageWrapper imageUrls={imageUrls}>
+            <div
+                className="main-container"
+                style={{
+                    backgroundColor: "#ffffff",
+                    minHeight: "100vh",
+                    padding: "0 120px",
+                    display: "flex",
+                    justifyContent: "space-between",
+                    gap: "80px",
+                }}
+            >
             {/* Left Column */}
             <div
                 className="left-column"
@@ -27,6 +34,9 @@ export default function UniviewPage() {
                     flex: 3,
                     alignSelf: "stretch",
                     padding: "80px 0",
+                    position: "sticky",
+                    top: 0,
+                    height: "100vh",
                 }}
             >
                 <BackButton href="/" />
@@ -42,9 +52,11 @@ export default function UniviewPage() {
                         <p><span style={{ fontWeight: 600 }}>Team Size:</span> Solo</p>
                     </div>
                     <div className="buttons-container" style={{ display: "flex", gap: "10px" }}>
-                        <PrimaryButton onClick={() => window.open('https://www.figma.com/proto/8ZHYALbBjaqk0l1YGsYxUL/AdaptX-Project-Deliverables?node-id=2518-689&p=f&t=aciuc2wAoH49RueT-8&scaling=scale-down&content-scaling=fixed&page-id=2178%3A116&starting-point-node-id=2518%3A689&show-proto-sidebar=1&hide-ui=1', '_blank')}>
-                            View Prototype
-                        </PrimaryButton>
+                        <a href="https://www.figma.com/proto/mOBClxaW8XVlBxWYJFdTu3/High-Fi-Mockup---Andrew-Liu--Copy-?node-id=2148-3509&p=f&t=xLWqwYSb0bDvpMc1-8&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=2148%3A3509&hide-ui=1" style={{ textDecoration: "none" }} target="_blank" rel="noopener noreferrer">
+                            <PrimaryButton>
+                                View Prototype
+                            </PrimaryButton>
+                        </a>
                     </div>
                 </div>
                 <p>© 2025 Andrew Liu</p>
@@ -55,8 +67,6 @@ export default function UniviewPage() {
                 className="right-column"
                 style={{
                     flex: 4,
-                    height: "100vh",
-                    overflowY: "auto",
                     paddingTop: "80px",
                     paddingBottom: "80px",
                 }}
@@ -193,6 +203,7 @@ export default function UniviewPage() {
                 </div>
             </div>
         </div>
+        </PageWrapper>
     );
 }
 

@@ -4,20 +4,33 @@ import PrimaryButton from "@/components/PrimaryButton";
 import LinkButton from "@/components/LinkButton";
 import SecondaryButton from "@/components/SecondaryButton";
 import ProjectCard from "@/components/ProjectCard";
+import PageWrapper from "@/components/PageWrapper";
 
 export default function Home() {
+    const imageUrls = [
+        "/notion-face.png",
+        "/adaptx/adaptx-thumbnail.png",
+        "/uniview/uniview-thumbnail.png",
+        "/icons/figma.svg",
+        "/icons/linkedin.svg",
+        "/icons/github.svg",
+        "/icons/email.svg",
+        "/icons/down-arrow.svg"
+    ];
+
     return (
-        <div
-            className="main-container"
-            style={{
-                backgroundColor: "#ffffff",
-                minHeight: "100vh",
-                padding: "0 120px",
-                display: "flex",
-                justifyContent: "space-between",
-                gap: "80px",
-            }}
-        >
+        <PageWrapper imageUrls={imageUrls}>
+            <div
+                className="main-container"
+                style={{
+                    backgroundColor: "#ffffff",
+                    minHeight: "100vh",
+                    padding: "0 120px",
+                    display: "flex",
+                    justifyContent: "space-between",
+                    gap: "80px",
+                }}
+            >
             {/* Left Column */}
             <div
                 className="left-column"
@@ -29,6 +42,9 @@ export default function Home() {
                     flex: 3,
                     alignSelf: "stretch",
                     padding: "80px 0",
+                    position: "sticky",
+                    top: 0,
+                    height: "100vh",
                 }}
             >
                 <img
@@ -43,9 +59,11 @@ export default function Home() {
                         <h2>Junior UI/UX Designer</h2>
                     </div>
                     <div className="buttons-container" style={{ display: "flex", gap: "10px" }}>
-                        <PrimaryButton onClick={() => window.open('/Andrew_Liu_UIUX_Designer.pdf', '_blank')}>
-                            View Resume
-                        </PrimaryButton>
+                        <a href="/Andrew_Liu_UIUX_Designer.pdf" style={{ textDecoration: "none" }} target="_blank" rel="noopener noreferrer">
+                            <PrimaryButton>
+                                View Resume
+                            </PrimaryButton>
+                        </a>
                         <a href="/about" style={{ textDecoration: "none" }}>
                             <SecondaryButton>
                                 About Me
@@ -78,8 +96,6 @@ export default function Home() {
                 className="right-column"
                 style={{
                     flex: 4,
-                    height: "100vh",
-                    overflowY: "auto",
                     paddingTop: "40px",
                     paddingBottom: "60px",
                 }}
@@ -132,5 +148,6 @@ export default function Home() {
                 </div>
             </div>
         </div>
+        </PageWrapper>
     );
 }
