@@ -69,8 +69,8 @@ export default function UniviewPage() {
                         </p>
                     </div>
                     <img 
-                        src={"/adaptx/adaptx-mockup.png"}
-                        alt={"AdaptX iPhone mockup"}
+                        src={"/uniview/uniview-mockup.png"}
+                        alt={"Uniview Macbook mockup"}
                         style={{
                             width: "100%",
                             height: "auto",
@@ -104,6 +104,15 @@ export default function UniviewPage() {
                         <p style={{ fontSize: "0.938rem" }}>
                             The design process started with consolidating some of the information I gathered during the research phase to create a user persona named Alex Markov. This persona consisted of personal information, like age and occupation, as well as activities & behaviors, goals & motivations, and pain points & frustrations, all of which were informed by the user interview responses.
                         </p>
+                        <img 
+                            src={"/uniview/uniview-persona.png"}
+                            alt={"Uniview user persona"}
+                            style={{
+                                width: "100%",
+                                height: "auto",
+                                borderRadius: "10px",
+                            }}
+                        />
                         <p style={{ fontSize: "0.938rem", textDecoration: "underline" }}>
                             User Flow:
                         </p>
@@ -116,12 +125,30 @@ export default function UniviewPage() {
                         <p style={{ fontSize: "0.938rem" }}>
                             Before moving into hi-fi design, I created a set of lo-fi wireframes to generally map out the app's core flows and layouts. These sketches were notably rudimentary, especially in hindsight, but I was approaching the end of the semester and wanted to move into hi-fi prototyping — where I could better explore color, typography, and interface details — as soon as possible. Despite their minimalism, though, these basic wireframes were still helpful and a necessary stepping stone in converting the high-level site map into a real, functional user experience.
                         </p>
+                        <img 
+                            src={"/uniview/uniview-lofi.png"}
+                            alt={"Uniview lofi wireframes"}
+                            style={{
+                                width: "100%",
+                                height: "auto",
+                                borderRadius: "10px",
+                            }}
+                        />
                         <p style={{ fontSize: "0.938rem", textDecoration: "underline" }}>
                             Hi-fi Wireframes:
                         </p>
                         <p style={{ fontSize: "0.938rem" }}>
                             For the hi-fi designs, I took inspiration from the UI of Hulu and Spotify, two streaming services that were brought up in a couple of the initial user interviews as having a strong blend of simplicity and functionality. I wanted to achieve the same balance, so I went for a minimalist interface with as little visual clutter as possible that would highlight CTAs more clearly and intuitively.
                         </p>
+                        <img 
+                            src={"/uniview/uniview-hifi.png"}
+                            alt={"Uniview hifi wireframes"}
+                            style={{
+                                width: "100%",
+                                height: "auto",
+                                borderRadius: "10px",
+                            }}
+                        />
                         <p style={{ fontSize: "0.938rem" }}>
                             A big focus of mine during this portion of the process was to ensure visual consistency between the different screens, which I felt would improve the overall experience of the app as it would make navigation easier and communicate a clear design language. I tried to take into account all of my user interview responses; while some were easier to implement into a design/prototype, like keeping the overall style and simplicity of other apps the users had used, others were more difficult or not possible at all (namely, an improved recommendation algorithm).
                         </p>

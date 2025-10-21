@@ -105,7 +105,7 @@ export default function AboutPage() {
                     </div>
                     <div style={{ display: "flex", flexDirection: "column", gap: "20px" }}>
                         <p style={{ fontSize: "0.938rem" }}>
-                            I’m a designer and developer with a passion for inclusivity. Since I was a kid, I’ve always loved doing anything that has allowed me to express myself creatively: drawing, painting, and so on. Recently, I graduated from Boston University with a degree in Computer Science. Now, I’m working to combine my passion for art and design with my background working on developing software to create beautiful and human user experiences. 
+                            I’m a designer and developer with a passion for inclusive design. Since I was a kid, I’ve always loved doing anything that has allowed me to express myself creatively: drawing, painting, and so on. Recently, I graduated from Boston University with a degree in Computer Science. Now, I’m working to combine my passion for art and design with my background working on developing software to create beautiful and human user experiences. 
                         </p>
                         <p style={{ fontSize: "0.938rem" }}>
                             In my free time, I love listening to and making music, taking photos on various types of cameras, watching film and TV, and playing video games. I also enjoy playing tennis and am possibly the biggest ramen fiend you’ll ever meet.
