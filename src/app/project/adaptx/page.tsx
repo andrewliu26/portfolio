@@ -57,11 +57,9 @@ export default function AdaptxPage() {
                         <p><span style={{ fontWeight: 600 }}>Team Size:</span> 4</p>
                     </div>
                     <div className="buttons-container" style={{ display: "flex", gap: "10px" }}>
-                        <a href="https://www.figma.com/proto/8ZHYALbBjaqk0l1YGsYxUL/AdaptX-Project-Deliverables?node-id=2518-689&p=f&t=aciuc2wAoH49RueT-8&scaling=scale-down&content-scaling=fixed&page-id=2178%3A116&starting-point-node-id=2518%3A689&show-proto-sidebar=1&hide-ui=1" style={{ textDecoration: "none" }} target="_blank" rel="noopener noreferrer">
-                            <PrimaryButton>
-                                View Prototype
-                            </PrimaryButton>
-                        </a>
+                        <PrimaryButton href="https://www.figma.com/proto/8ZHYALbBjaqk0l1YGsYxUL/AdaptX-Project-Deliverables?node-id=2518-689&p=f&t=aciuc2wAoH49RueT-8&scaling=scale-down&content-scaling=fixed&page-id=2178%3A116&starting-point-node-id=2518%3A689&show-proto-sidebar=1&hide-ui=1" target="_blank">
+                            View Prototype
+                        </PrimaryButton>
                     </div>
                 </div>
                 <p>© 2025 Andrew Liu</p>

@@ -65,7 +65,8 @@ export default function PageWrapper({ children, imageUrls = [] }: PageWrapperPro
     <div
       style={{
         opacity: isLoaded ? 1 : 0,
-        transition: 'opacity 0.6s ease-in-out',
+        transform: isLoaded ? 'translateY(0)' : 'translateY(5px)',
+        transition: 'opacity 0.6s ease-in-out, transform 0.6s ease-in-out',
         minHeight: '100vh'
       }}
     >

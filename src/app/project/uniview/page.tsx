@@ -53,11 +53,9 @@ export default function UniviewPage() {
                         <p><span style={{ fontWeight: 600 }}>Team Size:</span> Solo</p>
                     </div>
                     <div className="buttons-container" style={{ display: "flex", gap: "10px" }}>
-                        <a href="https://www.figma.com/proto/mOBClxaW8XVlBxWYJFdTu3/High-Fi-Mockup---Andrew-Liu--Copy-?node-id=2148-3509&p=f&t=xLWqwYSb0bDvpMc1-8&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=2148%3A3509&hide-ui=1" style={{ textDecoration: "none" }} target="_blank" rel="noopener noreferrer">
-                            <PrimaryButton>
-                                View Prototype
-                            </PrimaryButton>
-                        </a>
+                        <PrimaryButton href="https://www.figma.com/proto/mOBClxaW8XVlBxWYJFdTu3/High-Fi-Mockup---Andrew-Liu--Copy-?node-id=2148-3509&p=f&t=xLWqwYSb0bDvpMc1-8&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=2148%3A3509&hide-ui=1" target="_blank">
+                            View Prototype
+                        </PrimaryButton>
                     </div>
                 </div>
                 <p>© 2025 Andrew Liu</p>

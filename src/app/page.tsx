@@ -5,6 +5,7 @@ import LinkButton from "@/components/LinkButton";
 import SecondaryButton from "@/components/SecondaryButton";
 import ProjectCard from "@/components/ProjectCard";
 import PageWrapper from "@/components/PageWrapper";
+import { ChevronDown } from 'lucide-react';
 
 export default function Home() {
     const imageUrls = [
@@ -59,30 +60,26 @@ export default function Home() {
                         <h2>Junior UI/UX Designer</h2>
                     </div>
                     <div className="buttons-container" style={{ display: "flex", gap: "10px" }}>
-                        <a href="/Andrew_Liu_UIUX_Designer.pdf" style={{ textDecoration: "none" }} target="_blank" rel="noopener noreferrer">
-                            <PrimaryButton>
-                                View Resume
-                            </PrimaryButton>
-                        </a>
-                        <a href="/about" style={{ textDecoration: "none" }}>
-                            <SecondaryButton>
-                                About Me
-                            </SecondaryButton>
-                        </a>
+                        <PrimaryButton href="/Andrew_Liu_UIUX_Designer.pdf" target="_blank">
+                            View Resume
+                        </PrimaryButton>
+                        <SecondaryButton href="/about">
+                            About Me
+                        </SecondaryButton>
                     </div>
                     <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
                         <p>Connect with me:</p>
                         <div className="social-links" style={{ display: "flex", gap: "20px" }}>
-                            <LinkButton href="https://www.figma.com/@andrewliu26/" icon="/icons/figma.svg">
+                            <LinkButton href="https://www.figma.com/@andrewliu26/" icon="figma">
                                 Figma
                             </LinkButton>
-                            <LinkButton href="https://www.linkedin.com/in/andrewliu26/" icon="/icons/linkedin.svg">
+                            <LinkButton href="https://www.linkedin.com/in/andrewliu26/" icon="linkedin">
                                 LinkedIn
                             </LinkButton>
-                            <LinkButton href="https://www.github.com/andrewliu26" icon="/icons/github.svg">
+                            <LinkButton href="https://www.github.com/andrewliu26" icon="github">
                                 GitHub
                             </LinkButton>
-                            <LinkButton href="mailto:andrewliucs@gmail.com" icon="/icons/email.svg">
+                            <LinkButton href="mailto:andrewliucs@gmail.com" icon="mail">
                                 Email
                             </LinkButton>
                         </div>
@@ -114,9 +111,9 @@ export default function Home() {
                         gap: "8px",
                         fontFamily: "var(--font-geist-sans), sans-serif",
                         fontSize: "0.875rem",
-                        color: "#4e4e4e"
+                        color: "var(--text-secondary)",
                     }}>
-                        <img src="/icons/down-arrow.svg" alt="Arrow down" width={10} height={10} className="bounce-arrow" />
+                        <ChevronDown size={16} className="bounce-arrow" />
                         <span>Scroll down to view more</span>
                     </div>
                 </div>
