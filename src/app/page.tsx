@@ -23,7 +23,7 @@ export default function Home() {
             <div
                 className="main-container"
                 style={{
-                    backgroundColor: "#ffffff",
+                    backgroundColor: "var(--background)",
                     minHeight: "100vh",
                     padding: "0 120px",
                     display: "flex",
@@ -107,15 +107,7 @@ export default function Home() {
                     alignItems: "center",
                     marginBottom: "32px"
                 }}>
-                    <h2 style={{ 
-                        fontFamily: "var(--font-geist-sans), sans-serif",
-                        fontSize: "1rem",
-                        fontWeight: "600",
-                        color: "#111111",
-                        margin: "0"
-                    }}>
-                        Projects
-                    </h2>
+                    <h3>Projects</h3>
                     <div style={{
                         display: "flex",
                         alignItems: "center",

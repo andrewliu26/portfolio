@@ -3,6 +3,7 @@
 import BackButton from "@/components/BackButton";
 import PrimaryButton from "@/components/PrimaryButton";
 import PageWrapper from "@/components/PageWrapper";
+import ThemeImage from "@/components/ThemeImage";
 
 export default function AdaptxPage() {
     const imageUrls = [
@@ -19,7 +20,7 @@ export default function AdaptxPage() {
             <div
                 className="main-container"
                 style={{
-                    backgroundColor: "#ffffff",
+                    backgroundColor: "var(--background)",
                     minHeight: "100vh",
                     padding: "0 120px",
                     display: "flex",
@@ -77,12 +78,12 @@ export default function AdaptxPage() {
             >
                 <div style={{ display: "flex", flexDirection: "column", gap: "40px" }}>
                     <div style={{ display: "flex", flexDirection: "column", gap: "20px" }}>
-                        <h3>OVERVIEW</h3>
+                        <h4>OVERVIEW</h4>
                         <p style={{ fontSize: "0.938rem" }}>
                             Athletes with impairments often struggle to find compatible guides and accessible events, while volunteers and organizers lack an easy way to connect. Our goal with this project was to create a location-based app that links impaired athletes with nearby guides, makes volunteering simple, and helps organizers manage inclusive events.
                         </p>
                     </div>
-                    <img 
+                    <ThemeImage 
                         src={"/adaptx/adaptx-mockup.png"}
                         alt={"AdaptX iPhone mockup"}
                         style={{
@@ -92,7 +93,7 @@ export default function AdaptxPage() {
                         }}
                     />
                     <div style={{ display: "flex", flexDirection: "column", gap: "20px" }}>
-                        <h3>RESEARCH</h3>
+                        <h4>RESEARCH</h4>
                         <p style={{ fontSize: "0.938rem" }}>
                             To gather more information about the app's potential user base, particularly their accessibility needs and pain points they experienced with other fitness apps they had used before, our team designed a survey containing a mix of open-ended and multiple-choice questions and sent it out to a group of volunteers.
                         </p>
@@ -104,14 +105,14 @@ export default function AdaptxPage() {
                         </p>
                     </div>
                     <div style={{ display: "flex", flexDirection: "column", gap: "20px" }}>
-                        <h3>DESIGN</h3>
+                        <h4>DESIGN</h4>
                         <p style={{ fontSize: "0.938rem", textDecoration: "underline" }}>
                             User Personas:
                         </p>
                         <p style={{ fontSize: "0.938rem" }}>
                             Our design process began with creating user personas and journey maps based on the research we had done. This step was crucial in determining the direction we would go with the app and helped us consolidate our work in the prior phase to be more digestible and tangible. Below is a persona our team created for the primary user type, adaptive athletes:
                         </p>
-                        <img 
+                        <ThemeImage 
                             src={"/adaptx/adaptx-persona.png"}
                             alt={"AdaptX user persona"}
                             style={{
@@ -137,7 +138,7 @@ export default function AdaptxPage() {
                         <p style={{ fontSize: "0.938rem" }}>
                             Following this, we translated our hand-drawn designs into Figma as lo-fi wireframes. During this portion, we focused only on copying what we had worked on on the whiteboard, using basic shapes and text boxes to outline where headings, buttons, images, etc. would go. With this done, we were able to determine how each screen should look, which set us up nicely to move on to hi-fi wireframes.
                         </p>
-                        <img 
+                        <ThemeImage 
                             src={"/adaptx/adaptx-lofi.png"}
                             alt={"AdaptX lofi wireframes"}
                             style={{
@@ -154,7 +155,7 @@ export default function AdaptxPage() {
                         <p style={{ fontSize: "0.938rem" }}>
                             The last month of the project was spent between fleshing out our hi-fi wireframes and prototyping. We took an iterative approach with designing the hi-fi screens, initially copying over the lo-fi designs and doing some basic styling (adding color, updating fonts, choosing iconography). From there, I created a library of custom components in Figma to ensure consistent design language across the app. This included buttons, cards, etc., all of which I created multiple variants of for different states (default, pressed, inactive) to make the user experience more tactile and reactive. At the end of the design phase, we had the final hi-fi wireframes you see below.
                         </p>
-                        <img 
+                        <ThemeImage 
                             src={"/adaptx/adaptx-hifi.png"}
                             alt={"AdaptX hifi wireframes"}
                             style={{
@@ -185,7 +186,7 @@ export default function AdaptxPage() {
                         </ul>
                     </div>
                     <div style={{ display: "flex", flexDirection: "column", gap: "20px" }}>
-                        <h3>PROJECT TAKEAWAYS</h3>
+                        <h4>PROJECT TAKEAWAYS</h4>
                         <p style={{ fontSize: "0.938rem" }}>
                             This project was an incredibly fun and valuable experience. It gave me my first experience working in a team environment as a UI/UX designer, which brought up a range of different challenges that I got to navigate and solve. It was also the first time I got to play more of a leadership role – being the member of the team with the most prior experience with design and Figma – which brought with it its own challenges and rewards.
                         </p>

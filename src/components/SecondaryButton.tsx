@@ -22,13 +22,7 @@ export default function SecondaryButton({
       type={type}
       onClick={onClick}
       disabled={disabled}
-      className={`px-[20px] py-[10px] bg-[#f0f0f0] text-[#111111] rounded-full hover:bg-[#e9e9e9] transition-colors duration-200 disabled:opacity-50 disabled:cursor-not-allowed ${className}`}
-      style={{
-        fontFamily: 'var(--font-geist-sans), sans-serif',
-        fontSize: '0.875rem',
-        border: 'none',
-        cursor: disabled ? 'not-allowed' : 'pointer',
-      }}
+      className={`secondary-button ${className}`}
     >
       {children}
     </button>

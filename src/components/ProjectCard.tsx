@@ -2,6 +2,7 @@
 
 import React from 'react';
 import Link from 'next/link';
+import ThemeImage from './ThemeImage';
 
 interface ProjectCardProps {
   href: string;
@@ -25,51 +26,18 @@ export default function ProjectCard({
       href={href}
       target={target}
       rel="noopener noreferrer"
-      style={{
-        display: "flex",
-        flexDirection: "column",
-        textDecoration: "none",
-        color: "inherit",
-        transition: "transform 0.2s ease, opacity 0.2s ease",
-        cursor: "pointer"
-      }}
-      onMouseEnter={(e) => {
-        e.currentTarget.style.transform = "translateY(-2px)";
-        e.currentTarget.style.opacity = "0.9";
-      }}
-      onMouseLeave={(e) => {
-        e.currentTarget.style.transform = "translateY(0)";
-        e.currentTarget.style.opacity = "1";
-      }}
+      className="project-card"
     >
-      <img 
+      <ThemeImage 
         src={imageSrc}
         alt={imageAlt}
-        style={{
-          width: "100%",
-          height: "auto",
-          borderRadius: "10px",
-          marginBottom: "12px"
-        }}
+        className="project-card-image"
       />
-      <div style={{
-        display: "flex",
-        justifyContent: "space-between",
-        alignItems: "center"
-      }}>
-        <span style={{
-          fontFamily: "var(--font-geist-sans), sans-serif",
-          fontSize: "0.875rem",
-          fontWeight: "500",
-          color: "#111111"
-        }}>
+      <div className="project-card-content">
+        <span className="project-card-name">
           {projectName}
         </span>
-        <span style={{
-          fontFamily: "var(--font-geist-sans), sans-serif",
-          fontSize: "0.813rem",
-          color: "#4e4e4e",
-        }}>
+        <span className="project-card-date">
           {date}
         </span>
       </div>

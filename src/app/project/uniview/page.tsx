@@ -3,6 +3,7 @@
 import BackButton from "@/components/BackButton";
 import PrimaryButton from "@/components/PrimaryButton";
 import PageWrapper from "@/components/PageWrapper";
+import ThemeImage from "@/components/ThemeImage";
 
 export default function UniviewPage() {
     const imageUrls = [
@@ -15,7 +16,7 @@ export default function UniviewPage() {
             <div
                 className="main-container"
                 style={{
-                    backgroundColor: "#ffffff",
+                    backgroundColor: "var(--background)",
                     minHeight: "100vh",
                     padding: "0 120px",
                     display: "flex",
@@ -73,12 +74,12 @@ export default function UniviewPage() {
             >
                 <div style={{ display: "flex", flexDirection: "column", gap: "40px" }}>
                     <div style={{ display: "flex", flexDirection: "column", gap: "20px" }}>
-                        <h3>OVERVIEW</h3>
+                        <h4>OVERVIEW</h4>
                         <p style={{ fontSize: "0.938rem" }}>
                             As more and more streaming services enter the market, subscribers have a harder time finding what they want to watch across different apps, needing to spend extra effort launching each service and searching through its various pages only to find that what they want to watch is no longer there. Uniview is a proposed solution to this issue – a consolidated streaming app that lets you connect all your other services and access their content in one place, saving you time so you can enjoy your favorite content with ease.
                         </p>
                     </div>
-                    <img 
+                    <ThemeImage 
                         src={"/uniview/uniview-mockup.png"}
                         alt={"Uniview Macbook mockup"}
                         style={{
@@ -88,7 +89,7 @@ export default function UniviewPage() {
                         }}
                     />
                     <div style={{ display: "flex", flexDirection: "column", gap: "20px" }}>
-                        <h3>RESEARCH</h3>
+                        <h4>RESEARCH</h4>
                         <p style={{ fontSize: "0.938rem" }}>
                             I began the research phase of this project by conducting two in-person user interviews, as well as one over Zoom, to identify the strengths and weaknesses of existing streaming service apps. For all three participants, I asked the following questions:
                         </p>
@@ -107,14 +108,14 @@ export default function UniviewPage() {
                         </p>
                     </div>
                     <div style={{ display: "flex", flexDirection: "column", gap: "20px" }}>
-                        <h3>DESIGN</h3>
+                        <h4>DESIGN</h4>
                         <p style={{ fontSize: "0.938rem", textDecoration: "underline" }}>
                             User Persona:
                         </p>
                         <p style={{ fontSize: "0.938rem" }}>
                             The design process started with consolidating some of the information I gathered during the research phase to create a user persona named Alex Markov. This persona consisted of personal information, like age and occupation, as well as activities & behaviors, goals & motivations, and pain points & frustrations, all of which were informed by the user interview responses.
                         </p>
-                        <img 
+                        <ThemeImage 
                             src={"/uniview/uniview-persona.png"}
                             alt={"Uniview user persona"}
                             style={{
@@ -135,7 +136,7 @@ export default function UniviewPage() {
                         <p style={{ fontSize: "0.938rem" }}>
                             Before moving into hi-fi design, I created a set of lo-fi wireframes to generally map out the app's core flows and layouts. These sketches were notably rudimentary, especially in hindsight, but I was approaching the end of the semester and wanted to move into hi-fi prototyping — where I could better explore color, typography, and interface details — as soon as possible. Despite their minimalism, though, these basic wireframes were still helpful and a necessary stepping stone in converting the high-level site map into a real, functional user experience.
                         </p>
-                        <img 
+                        <ThemeImage 
                             src={"/uniview/uniview-lofi.png"}
                             alt={"Uniview lofi wireframes"}
                             style={{
@@ -150,7 +151,7 @@ export default function UniviewPage() {
                         <p style={{ fontSize: "0.938rem" }}>
                             For the hi-fi designs, I took inspiration from the UI of Hulu and Spotify, two streaming services that were brought up in a couple of the initial user interviews as having a strong blend of simplicity and functionality. I wanted to achieve the same balance, so I went for a minimalist interface with as little visual clutter as possible that would highlight CTAs more clearly and intuitively.
                         </p>
-                        <img 
+                        <ThemeImage 
                             src={"/uniview/uniview-hifi.png"}
                             alt={"Uniview hifi wireframes"}
                             style={{
@@ -186,7 +187,7 @@ export default function UniviewPage() {
                         </ul>
                     </div>
                     <div style={{ display: "flex", flexDirection: "column", gap: "20px" }}>
-                        <h3>PROJECT TAKEAWAYS</h3>
+                        <h4>PROJECT TAKEAWAYS</h4>
                         <p style={{ fontSize: "0.938rem" }}>
                             This project was my first foray into the full design process that goes into creating user experiences. As such, I made a lot of mistakes along the way. Writing this now in September 2025 and looking back at the work I did, it's easy for me to identify numerous areas I could do better now (the color contrast of some of the buttons was… a choice). But I also learned so much from diving into this experience and allowing myself to make those mistakes. Some of my biggest takeaways from working on Uniview were:
                         </p>

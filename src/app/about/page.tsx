@@ -21,7 +21,7 @@ export default function AboutPage() {
             <div
                 className="main-container"
                 style={{
-                    backgroundColor: "#ffffff",
+                    backgroundColor: "var(--background)",
                     minHeight: "100vh",
                     padding: "0 120px",
                     display: "flex",

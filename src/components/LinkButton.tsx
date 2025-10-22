@@ -16,25 +16,9 @@ export default function LinkButton({ href, icon, children, target }: LinkButtonP
       href={href}
       target={target || "_blank"}
       rel="noopener noreferrer"
-      style={{ 
-        display: "flex", 
-        alignItems: "center", 
-        gap: "10px",
-        textDecoration: "none",
-        color: "#4e4e4e",
-        fontFamily: "var(--font-geist-sans), sans-serif",
-        fontSize: "0.875rem",
-        margin: "0",
-        transition: "color 0.2s ease"
-      }}
-      onMouseEnter={(e) => {
-        e.currentTarget.style.color = "#111111";
-      }}
-      onMouseLeave={(e) => {
-        e.currentTarget.style.color = "inherit";
-      }}
+      className="link-button"
     >
-      <img src={icon} alt={children as string} style={{ height: "16px" }} />
+      <img src={icon} alt={children as string} />
       {children}
     </Link>
   );
