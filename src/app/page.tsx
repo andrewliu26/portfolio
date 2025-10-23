@@ -85,7 +85,7 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
-                <p>© 2025 Andrew Liu</p>
+                <p className="copyright">© 2025 Andrew Liu</p>
             </div>
 
             {/* Right Column */}
@@ -137,6 +137,7 @@ export default function Home() {
                 </div>
             </div>
         </div>
+        <div className="copyright-footer">© 2025 Andrew Liu</div>
         </PageWrapper>
     );
 }

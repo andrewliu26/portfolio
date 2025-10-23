@@ -4,6 +4,7 @@ import BackButton from "@/components/BackButton";
 import PrimaryButton from "@/components/PrimaryButton";
 import PageWrapper from "@/components/PageWrapper";
 import ThemeImage from "@/components/ThemeImage";
+import NextProjectButton from "@/components/NextProjectButton";
 
 export default function AdaptxPage() {
     const imageUrls = [
@@ -62,7 +63,7 @@ export default function AdaptxPage() {
                         </PrimaryButton>
                     </div>
                 </div>
-                <p>© 2025 Andrew Liu</p>
+                <p className="copyright">© 2025 Andrew Liu</p>
             </div>
 
             {/* Right Column */}
@@ -191,10 +192,19 @@ export default function AdaptxPage() {
                         <p style={{ fontSize: "0.938rem" }}>
                             One of the biggest lessons I took away from this experience is that the degree to which a product is accessible can make or break the user experience. This was the first time I had ever worked on an app whose primary user base consisted of individuals with physical and visual impairments. As such, my perception of "good UI" was challenged deeply throughout the four months my team and I worked on this project.
                         </p>
+                        <div style={{ display: "flex", justifyContent: "center", marginTop: "40px" }}>
+                            <NextProjectButton
+                                href="/project/uniview"
+                                thumbnailSrc="/uniview/uniview-thumbnail.png"
+                                thumbnailAlt="Uniview Project Thumbnail"
+                                projectTitle="Uniview"
+                            />
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+        <div className="copyright-footer">© 2025 Andrew Liu</div>
         </PageWrapper>
     );
 }

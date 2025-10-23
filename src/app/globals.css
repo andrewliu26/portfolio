@@ -150,6 +150,14 @@ body {
     height: auto !important;
   }
 
+  .copyright {
+    display: none !important;
+  }
+
+  .copyright-footer {
+    display: block !important;
+  }
+
   .main-left {
     gap: 30px !important;
   }
@@ -187,6 +195,105 @@ body {
   animation: bounce 1s infinite;
   color: inherit;
   transition: color 0.2s ease;
+}
+
+/* Bento Image */
+.bento-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.bento-image {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  object-fit: contain;
+}
+
+/* Next Project Button */
+.next-project-button {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 10px;
+  background-color: var(--secondary);
+  border-radius: 10px;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+  cursor: pointer;
+  width: 100%;
+}
+
+.next-project-button:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
+.next-project-button:hover .next-project-arrow {
+  color: var(--text-primary);
+}
+
+.next-project-button:active {
+  transform: translateY(0);
+  opacity: 0.9;
+}
+
+.next-project-thumbnail {
+  width: 100px;
+  height: 60px;
+  border-radius: 6px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.next-project-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  flex: 1;
+}
+
+.next-project-arrow {
+  color: var(--text-secondary);
+  flex-shrink: 0;
+  transition: color 0.2s ease;
+}
+
+.next-project-label {
+  font-family: var(--font-geist-sans), sans-serif;
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.next-project-title {
+  font-family: var(--font-geist-sans), sans-serif;
+  font-size: 1rem;
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.copyright {
+  font-family: var(--font-geist-sans), sans-serif;
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+.copyright-footer {
+  display: none;
+  text-align: left;
+  padding: 40px 20px;
+  font-family: var(--font-geist-sans), sans-serif;
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  border-top: 1px solid var(--border-color);
+  margin-top: 40px;
 }
 
 /* Primary Button */

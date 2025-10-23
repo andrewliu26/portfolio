@@ -4,6 +4,7 @@ import BackButton from "@/components/BackButton";
 import PrimaryButton from "@/components/PrimaryButton";
 import PageWrapper from "@/components/PageWrapper";
 import ThemeImage from "@/components/ThemeImage";
+import NextProjectButton from "@/components/NextProjectButton";
 
 export default function UniviewPage() {
     const imageUrls = [
@@ -58,7 +59,7 @@ export default function UniviewPage() {
                         </PrimaryButton>
                     </div>
                 </div>
-                <p>© 2025 Andrew Liu</p>
+                <p className="copyright">© 2025 Andrew Liu</p>
             </div>
 
             {/* Right Column */}
@@ -198,10 +199,19 @@ export default function UniviewPage() {
                         <p style={{ fontSize: "0.938rem" }}>
                             Usability: Usability issues (like difficulty finding the “connect apps” flow) showed how even the smallest navigation challenges can disrupt the overall experience for the user. These issues challenged me to reorient my perspective as I worked, as sometimes I found I would get so focused on small details that I would neglect to contextualize my designs in the rest of the experience.
                         </p>
+                        <div style={{ display: "flex", justifyContent: "center", marginTop: "40px" }}>
+                            <NextProjectButton
+                                href="/project/adaptx"
+                                thumbnailSrc="/adaptx/adaptx-thumbnail.png"
+                                thumbnailAlt="AdaptX Project Thumbnail"
+                                projectTitle="AdaptX"
+                            />
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+        <div className="copyright-footer">© 2025 Andrew Liu</div>
         </PageWrapper>
     );
 }

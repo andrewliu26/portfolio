@@ -15,7 +15,7 @@ export default function LinkButton({ href, icon, children, target }: LinkButtonP
   const getIcon = (iconName: string) => {
     switch (iconName) {
       case 'figma':
-        return <FaFigma size={16} />;
+        return <FaFigma size={15} />;
       case 'linkedin':
         return <FaLinkedin size={16} />;
       case 'github':
