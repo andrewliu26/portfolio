@@ -208,7 +208,6 @@ body {
 .bento-image {
   width: 100%;
   height: auto;
-  border-radius: 12px;
   object-fit: contain;
 }
 
@@ -305,6 +304,7 @@ body {
   border: none;
   font-family: var(--font-geist-sans), sans-serif;
   font-size: 0.875rem;
+  font-weight: 500;
   cursor: pointer;
   transition: background-color 0.2s ease, opacity 0.1s ease;
 }
@@ -331,6 +331,7 @@ body {
   border: none;
   font-family: var(--font-geist-sans), sans-serif;
   font-size: 0.875rem;
+  font-weight: 500;
   cursor: pointer;
   transition: background-color 0.2s ease, opacity 0.1s ease;
 }

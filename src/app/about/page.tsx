@@ -2,11 +2,24 @@
 
 import BackButton from "@/components/BackButton";
 import PageWrapper from "@/components/PageWrapper";
+import { useState, useEffect } from "react";
 
 export default function AboutPage() {
-    const imageUrls = [
-        "/about-me/bento.png"
+    const [randomBentoImage, setRandomBentoImage] = useState("/about-me/bento-1.png");
+    
+    const bentoImages = [
+        "/about-me/bento-1.png",
+        "/about-me/bento-2.png", 
+        "/about-me/bento-3.png"
     ];
+
+    useEffect(() => {
+        // Select a random bento image on component mount
+        const randomIndex = Math.floor(Math.random() * bentoImages.length);
+        setRandomBentoImage(bentoImages[randomIndex]);
+    }, []);
+
+    const imageUrls = [randomBentoImage];
 
     return (
         <PageWrapper imageUrls={imageUrls}>
@@ -65,7 +78,7 @@ export default function AboutPage() {
             >
                 <div className="bento-image-container">
                     <img
-                        src="/about-me/bento.png"
+                        src={randomBentoImage}
                         alt="About me photos"
                         className="bento-image"
                     />
