@@ -52,10 +52,10 @@ export default function AdaptxPage() {
                         <h2>A mobile app that connects impaired athletes with support partners to make fitness more accessible, inclusive, and rewarding.</h2>
                     </div>
                     <div style={{ display: "flex", flexDirection: "column", gap: "4px" }}>
-                        <p><span style={{ fontWeight: 600 }}>Role:</span> UI/UX Designer</p>
-                        <p><span style={{ fontWeight: 600 }}>Scope:</span> 4 months (January 2025 – May 2025)</p>
-                        <p><span style={{ fontWeight: 600 }}>Tools:</span> Figma, Notion, Miro, Pen & Paper</p>
-                        <p><span style={{ fontWeight: 600 }}>Team Size:</span> 4</p>
+                        <p><span style={{ marginRight: "8px" }}>👷‍♂️</span><span style={{ fontWeight: 600 }}>Role:</span> UI/UX Designer</p>
+                        <p><span style={{ marginRight: "8px" }}>🕒</span><span style={{ fontWeight: 600 }}>Scope:</span> 4 months (January 2025 – May 2025)</p>
+                        <p><span style={{ marginRight: "8px" }}>🛠️</span><span style={{ fontWeight: 600 }}>Tools:</span> Figma, Notion, Miro, Pen & Paper</p>
+                        <p><span style={{ marginRight: "8px" }}>👥</span><span style={{ fontWeight: 600 }}>Team Size:</span> 4</p>
                     </div>
                     <div className="buttons-container" style={{ display: "flex", gap: "10px" }}>
                         <PrimaryButton href="https://www.figma.com/proto/8ZHYALbBjaqk0l1YGsYxUL/AdaptX-Project-Deliverables?node-id=2518-689&p=f&t=aciuc2wAoH49RueT-8&scaling=scale-down&content-scaling=fixed&page-id=2178%3A116&starting-point-node-id=2518%3A689&show-proto-sidebar=1&hide-ui=1" target="_blank">

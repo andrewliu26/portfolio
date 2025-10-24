@@ -48,10 +48,10 @@ export default function UniviewPage() {
                         <h2>A desktop application that consolidates shows/movies across different streaming services into one place, making it easier to watch what you want to watch without the extra hassle.</h2>
                     </div>
                     <div style={{ display: "flex", flexDirection: "column", gap: "4px" }}>
-                        <p><span style={{ fontWeight: 600 }}>Role:</span> UI/UX Designer</p>
-                        <p><span style={{ fontWeight: 600 }}>Scope:</span> 4 months (January 2024 – May 2024)</p>
-                        <p><span style={{ fontWeight: 600 }}>Tools:</span> Figma, Pen & Paper</p>
-                        <p><span style={{ fontWeight: 600 }}>Team Size:</span> Solo</p>
+                        <p><span style={{ marginRight: "8px" }}>👷‍♂️</span><span style={{ fontWeight: 600 }}>Role:</span> UI/UX Designer</p>
+                        <p><span style={{ marginRight: "8px" }}>🕒</span><span style={{ fontWeight: 600 }}>Scope:</span> 4 months (January 2024 – May 2024)</p>
+                        <p><span style={{ marginRight: "8px" }}>🛠️</span><span style={{ fontWeight: 600 }}>Tools:</span> Figma, Pen & Paper</p>
+                        <p><span style={{ marginRight: "8px" }}>👥</span><span style={{ fontWeight: 600 }}>Team Size:</span> Solo</p>
                     </div>
                     <div className="buttons-container" style={{ display: "flex", gap: "10px" }}>
                         <PrimaryButton href="https://www.figma.com/proto/mOBClxaW8XVlBxWYJFdTu3/High-Fi-Mockup---Andrew-Liu--Copy-?node-id=2148-3509&p=f&t=xLWqwYSb0bDvpMc1-8&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=2148%3A3509&hide-ui=1" target="_blank">

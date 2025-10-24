@@ -98,7 +98,7 @@ export default function Home() {
                 }}
             >
                 {/* Header */}
-                <div style={{ 
+                <div className="projects-header" style={{ 
                     display: "flex", 
                     justifyContent: "space-between", 
                     alignItems: "center",

@@ -158,6 +158,12 @@ body {
     display: block !important;
   }
 
+  /* Media sections responsive */
+  .right-column > div:not(.projects-header) {
+    flex-direction: column !important;
+    gap: 30px !important;
+  }
+
   .main-left {
     gap: 30px !important;
   }
@@ -166,6 +172,13 @@ body {
     flex: none !important;
     height: fit-content !important;
     padding: 20px 0 !important;
+  }
+
+  /* Keep projects header as row on mobile */
+  .right-column .projects-header {
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    align-items: center !important;
   }
 }
 
@@ -197,18 +210,96 @@ body {
   transition: color 0.2s ease;
 }
 
-/* Bento Image */
-.bento-image-container {
+
+/* Media Item */
+.media-item {
   display: flex;
-  justify-content: center;
   align-items: center;
-  height: 100%;
+  gap: 10px;
+  padding: 10px;
+  background-color: var(--background);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  transition: transform 0.2s ease, opacity 0.2s ease;
 }
 
-.bento-image {
-  width: 100%;
-  height: auto;
-  object-fit: contain;
+.media-item:hover {
+  transform: translateY(-1px);
+  opacity: 0.95;
+}
+
+.media-item:active {
+  transform: translateY(0);
+  opacity: 0.9;
+}
+
+.media-item-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.media-item-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 0;
+}
+
+.media-item-title {
+  font-family: var(--font-geist-sans), sans-serif;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-width: 0;
+}
+
+.media-item-artist {
+  font-family: var(--font-geist-sans), sans-serif;
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-width: 0;
+}
+
+.media-item-year {
+  font-family: var(--font-geist-sans), sans-serif;
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+
+/* Camera Roll Section */
+.camera-roll-section {
+  margin-top: 40px;
+}
+
+.camera-roll-section h4 {
+  margin-bottom: 16px;
+}
+
+.camera-roll-container {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+}
+
+.camera-roll-image {
+  height: 200px;
+  border-radius: 10px;
+  object-fit: cover;
+  flex-shrink: 0;
 }
 
 /* Next Project Button */
