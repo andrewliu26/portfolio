@@ -5,8 +5,13 @@ import PrimaryButton from "@/components/PrimaryButton";
 import PageWrapper from "@/components/PageWrapper";
 import ThemeImage from "@/components/ThemeImage";
 import NextProjectButton from "@/components/NextProjectButton";
+import { useEffect } from 'react';
 
 export default function UniviewPage() {
+    useEffect(() => {
+        document.title = "Uniview - Andrew Liu";
+    }, []);
+
     const imageUrls = [
         "/uniview/uniview-thumbnail.png",
         "/icons/left-arrow.svg"

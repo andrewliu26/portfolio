@@ -6,8 +6,13 @@ import SecondaryButton from "@/components/SecondaryButton";
 import ProjectCard from "@/components/ProjectCard";
 import PageWrapper from "@/components/PageWrapper";
 import { ChevronDown } from 'lucide-react';
+import { useEffect } from 'react';
 
 export default function Home() {
+    useEffect(() => {
+        document.title = "Andrew Liu";
+    }, []);
+
     const imageUrls = [
         "/notion-face.png",
         "/adaptx/adaptx-thumbnail.png",

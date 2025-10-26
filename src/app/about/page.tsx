@@ -3,9 +3,13 @@
 import BackButton from "@/components/BackButton";
 import PageWrapper from "@/components/PageWrapper";
 import MediaItem from "@/components/MediaItem";
-import PrimaryButton from "@/components/PrimaryButton";
+import { useEffect } from 'react';
 
 export default function AboutPage() {
+    useEffect(() => {
+        document.title = "About Me - Andrew Liu";
+    }, []);
+
     const imageUrls = [
         // Only preload critical images that are immediately visible
         "/about-me/albums/two-star.jpeg",

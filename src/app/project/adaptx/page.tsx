@@ -5,8 +5,13 @@ import PrimaryButton from "@/components/PrimaryButton";
 import PageWrapper from "@/components/PageWrapper";
 import ThemeImage from "@/components/ThemeImage";
 import NextProjectButton from "@/components/NextProjectButton";
+import { useEffect } from 'react';
 
 export default function AdaptxPage() {
+    useEffect(() => {
+        document.title = "AdaptX - Andrew Liu";
+    }, []);
+
     const imageUrls = [
         "/adaptx/adaptx-hifi.png",
         "/adaptx/adaptx-lofi.png", 
