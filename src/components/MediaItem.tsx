@@ -8,7 +8,6 @@ interface MediaItemProps {
   imageAlt: string;
   title: string;
   artist?: string;
-  year?: string;
   className?: string;
 }
 
@@ -17,7 +16,6 @@ export default function MediaItem({
   imageAlt,
   title,
   artist,
-  year,
   className = ''
 }: MediaItemProps) {
   return (

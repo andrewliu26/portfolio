@@ -7,24 +7,15 @@ import PrimaryButton from "@/components/PrimaryButton";
 
 export default function AboutPage() {
     const imageUrls = [
-        // Album images
+        // Only preload critical images that are immediately visible
         "/about-me/albums/two-star.jpeg",
         "/about-me/albums/absolutely.jpeg", 
+        "/about-me/albums/imaginal-disk.png",
         "/about-me/albums/minecraft.jpeg",
-        // Movie images
         "/about-me/movies/parasite.jpg",
         "/about-me/movies/nemo.jpg",
         "/about-me/movies/cure.jpg",
-        // Camera roll images
-        "/about-me/imgs/DSCN0663.JPG",
-        "/about-me/imgs/IMG_0742.jpeg",
-        "/about-me/imgs/IMG_0747.jpeg",
-        "/about-me/imgs/IMG_1188_jpg.jpg",
-        "/about-me/imgs/IMG_3138.JPG",
-        "/about-me/imgs/IMG_3820.jpeg",
-        "/about-me/imgs/IMG_6168.jpeg",
-        "/about-me/imgs/IMG_8777.jpeg",
-        "/about-me/imgs/IMG_8946.jpeg"
+        "/about-me/movies/dune.jpeg"
     ];
 
     return (
@@ -63,7 +54,7 @@ export default function AboutPage() {
                         <h2>Learn more about who I am and what I do.</h2>
                     </div>
                     <div style={{ display: "flex", flexDirection: "column", gap: "4px" }}>
-                        <p><span style={{ marginRight: "8px" }}>📍</span><span style={{ fontWeight: 600 }}>Location:</span> Hopkinton, MA</p>
+                        <p><span style={{ marginRight: "8px" }}>📍</span><span style={{ fontWeight: 600 }}>Located in:</span> Hopkinton, MA</p>
                         <p><span style={{ marginRight: "8px" }}>🎮</span><span style={{ fontWeight: 600 }}>Playing:</span> Hollow Knight: Silksong, CS2</p>
                         <p><span style={{ marginRight: "8px" }}>📚</span><span style={{ fontWeight: 600 }}>Reading:</span> Recursion (Blake Crouch)</p>
                         <p><span style={{ marginRight: "8px" }}>🎧</span><span style={{ fontWeight: 600 }}>Listening to:</span> Dijon, Novo Amor, Zack Villere</p>
